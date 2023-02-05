@@ -1,5 +1,5 @@
-import styles from '../Contacts/Contacts.module.scss';
 import propTypes from 'prop-types';
+import styles from '../Contacts/Contacts.module.scss';
 
 export default function Contacts({ contacts, removeContact }) {
   const contactItem = contacts.map(({ name, number, id }) => {
@@ -24,13 +24,13 @@ export default function Contacts({ contacts, removeContact }) {
   );
 }
 
-// Contacts.propTypes = {
-//   contacts: PropTypes.arrayOf(
-//     PropTypes.shape({
-//       name: PropTypes.string,
-//       number: PropTypes.string,
-//       id: PropTypes.string,
-//     })
-//   ),
-//   removeContact: PropTypes.func,
-// };
+Contacts.propTypes = {
+  contacts: propTypes.arrayOf(
+    propTypes.shape({
+      name: propTypes.string,
+      number: propTypes.string,
+      id: propTypes.string,
+    })
+  ),
+  removeContact: propTypes.func,
+};

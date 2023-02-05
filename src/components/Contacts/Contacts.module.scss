@@ -9,7 +9,10 @@
   display: inline-flex;
   align-items: center;
   justify-content: space-between;
+  border: 1px solid;
   width: 500px;
+  padding: 10px;
+  margin-bottom: 5px;
 
   font-size: 30px;
 }
@@ -17,4 +20,5 @@
   width: 60px;
   height: 30px;
   border-radius: 5px;
+  cursor: pointer;
 }

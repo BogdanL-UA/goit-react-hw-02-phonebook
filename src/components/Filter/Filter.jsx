@@ -1,3 +1,4 @@
+import propTypes from 'prop-types';
 import styles from '../Filter/Filter.module.scss';
 
 export default function Filter({ onChange }) {
@@ -8,3 +9,7 @@ export default function Filter({ onChange }) {
     </div>
   );
 }
+
+Filter.propTypes = {
+  onChange: propTypes.func,
+};
