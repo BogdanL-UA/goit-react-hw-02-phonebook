@@ -1,0 +1,20 @@
+.contacts{
+  margin-left: 80px;
+}
+.contactsList{
+  display: flex;
+    flex-direction: column;
+}
+.listItem{
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 500px;
+
+  font-size: 30px;
+}
+.button{
+  width: 60px;
+  height: 30px;
+  border-radius: 5px;
+}
