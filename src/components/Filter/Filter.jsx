@@ -1,5 +1,5 @@
 import propTypes from 'prop-types';
-import styles from '../Filter/Filter.module.scss';
+import styles from '../Filter/Filter.module.css';
 
 export default function Filter({ onChange }) {
   return (

@@ -1,5 +1,5 @@
 import propTypes from 'prop-types';
-import styles from '../Contacts/Contacts.module.scss';
+import styles from '../Contacts/Contacts.module.css';
 
 export default function Contacts({ contacts, removeContact }) {
   const contactItem = contacts.map(({ name, number, id }) => {

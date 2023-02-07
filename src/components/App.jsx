@@ -5,7 +5,7 @@ import Contacts from './Contacts/Contacts';
 import ContactForm from './ContactForm/ContactForm';
 import Filter from './Filter/Filter';
 
-import styles from '../components/App.module.scss';
+import styles from '../components/App.module.css';
 
 class App extends Component {
   state = {
@@ -34,7 +34,7 @@ class App extends Component {
     return Boolean(contact);
   };
 
-  AddContact = ({ name, number }) => {
+  addContact = ({ name, number }) => {
     this.setState(prevState => {
       if (this.isDublicate(name, number)) {
         return alert(`${name}:${number} is already exist!`);
@@ -64,7 +64,7 @@ class App extends Component {
     return (
       <div className={styles.app}>
         <h1 className={styles.title}>Phonebook</h1>
-        <ContactForm onSubmit={this.AddContact} />
+        <ContactForm onSubmit={this.addContact} />
         <h2 className={styles.title}>Contacts</h2>
         <Filter onChange={this.onChangeFilter} />
         <Contacts contacts={contacts} removeContact={this.removeContact} />
